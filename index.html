@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="icon-a" src="./assets/img-1.svg" alt="icone em formato de " a">
+        <h1>Decodificador de Texto</h1>
+    </header>
+    <main>
+        <div id="container-input">
+            <textarea placeholder="Digite seu Texto - Apenas letras minúsculas e sem acento" id="textarea-input"
+                required>Digite seu texto</textarea>
+            <div class="container-btn flex">
+                <button id="crip-btn" type="button">Criptografar</button>
+                <button id="descrip-btn" type="button">Descriptografar</button>
+            </div>
+        </div>
+        <div id="container-output">
+            <div id="container-text-result-empty" class="flex">
+                <img class="img-empty" src="./assets/img-2.svg" alt="">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div id="container-text-result-filled" class="hidden">
+                <textarea id="textarea-output"></textarea>
+            </div>
+            <div class="container-btn container-copy hidden">
+                <button id="copy-btn" type="button">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span id="footer-text">Rômulo Reis - 2024</span>
+    </footer>
+</body>
+
+</html>
